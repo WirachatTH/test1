@@ -1,0 +1,374 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overscroll-behavior: none;
+  }
+  
+  
+  body {
+    background-color: black;
+    font-family: 'Kanit', serif;
+    height: 100%;
+    display: block;
+    overflow-x: hidden;
+  }
+  
+  div {
+    display: block;
+  }
+  
+  /* ::-webkit-scrollbar {
+    display: none;
+    -webkit-appearance: none;
+  }
+  
+  body::-webkit-scrollbar, html::-webkit-scrollbar {
+    width: 0.5em;
+  }
+  
+  body::-webkit-scrollbar-track, html::-webkit-scrollbar-track {
+    background-color: transparent;
+  } */
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    height: 500vh;
+    width: 100%;
+    background-color: black;
+  }
+  
+  .space150 {
+    height: 150vh;
+    width: 100%;
+  }
+  
+  .space250 {
+    height: 250vh;
+    width: 100%;
+  }
+  
+  .space50 {
+    height: 50vh;
+    width: 100%;
+  }
+  
+  .space20 {
+    height: 20vh;
+    width: 100%;
+  }
+  
+  .space10 {
+    height: 10vh;
+    width: 100%;
+  }
+  
+  .space75 {
+    height: 75vh;
+    width: 100%;
+  }
+  
+  #header1, #header2 {
+    position: sticky;
+    color: white;
+    top: 50vh;
+    width: 100%;
+    overflow: hidden;
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  
+  #header1.sticky, #header2.sticky {
+    opacity: 1;
+  }
+  
+  #header1.sticky2, #header2.sticky2 {
+    opacity: 0;
+  }
+  
+  #header1 > p, #header2 > p {
+    position: relative;
+    left: 30%;
+    width: fit-content;
+    overflow: hidden;
+    transform: translate(-50%, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vw;
+  }
+  
+  #header2 > p {
+    left: 70%;
+  }
+  
+  .bcc-logo-white {
+    width: 100%;
+    transform: translateY(-50%);
+    height: 200vh;
+    background-color: black;
+  }
+  
+  .bcc-logo-container {
+    position: sticky;
+    width: 100%;
+    top: 125vh;
+    opacity: 0;
+  }
+  
+  .bcc-logo-container.sticky {
+    opacity: 1;
+  }
+  
+  .bcc-logo-container.sticky2 {
+    opacity: 0.25;
+  }
+  
+  .bcc-logo-container > img{
+    position: relative;
+    max-width: 100%;
+    width: 45vh;
+    height: 45vh;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .header3 {
+    position: sticky;
+    top: 130vh;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    color: white;
+    font-size: 3vw;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .header3 {
+      font-size: 6vw;
+    }
+  }
+  
+  .header3.sticky {
+    opacity: 1;
+  }
+  
+  .introduction {
+    color: white;
+    position: relative;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(2.6vw, 1fr));
+    margin-top: -100vh;
+    height: 100vh;
+  }
+  
+  .introduction > p {
+    display: flex;
+    align-items: center;
+    font-size: 8vw;
+    width: 100%;
+  }
+  
+  .timeline {
+    position: relative;
+    color: white;
+    z-index: -3;
+  }
+  
+  .timeline-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .elements {
+    position: relative;
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .progress-container {
+    position: absolute;
+    z-index: -2;
+    width: 3px;
+    height: 100%;
+    border-radius: 1.5px;
+    background-color: gray;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .progress {
+    position: fixed;
+    z-index: -1;
+    background-image: linear-gradient(180deg, #4A7B8D, #EF6C52);
+    margin: 0;
+    padding: 0;
+    width: 3px;
+    border-radius: 1.5px;
+    height: 50vh;
+    top: 0;
+    left: auto;
+    right: auto;
+  }
+  
+  .section {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 180px 1fr;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    grid-template-rows: auto;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    opacity: 25%;
+  }
+  
+  .n {
+    display: flex;
+    justify-content: center;
+    font-size: 4vw;
+  }
+  
+  .pp {
+    position: sticky;
+    top: 50vh;
+    width: fit-content;
+    height: fit-content;
+    text-align: left;
+  }
+  
+  .cc {
+    position: sticky;
+    top: 50vh;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 0 8px black;
+  }
+  
+  .top-fade {
+    position: absolute;
+    height: 10vh;
+    width: 100%;
+    bottom: auto;
+    top: 0;
+    background-image: linear-gradient(180deg, black, transparent);
+  }
+  
+  .bottom-fade {
+    position: absolute;
+    height: 10vh;
+    width: 100%;
+    top: auto;
+    bottom: 0;
+    background-image: linear-gradient(0deg, black, transparent);
+  }
+  
+  .section1 {
+    height: 90vh;
+  }
+  
+  #sec1.view {
+    opacity: 1;
+  }
+  
+  .section2 {
+    height: 90vh;
+  }
+  
+  #sec2.view {
+    opacity: 1;
+  }
+  
+  .p1, .p2 {
+    text-align: center;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .logo {
+    position: relative;
+    max-width: 100%;
+    width: 45vh;
+    height: 45vh;
+  }
+  
+  .logo > img {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+  }
+  
+  .footer {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2vw;
+  }
+  
+  /* #header {
+    height: 1000px;
+  }
+  
+  .spacer1 {
+    height: 300px;
+  }
+  
+  .trigger {
+    position: relative;
+    top: 50%;
+    width: 100%;
+    min-height: 1px;
+    background-color: white;
+  }
+  
+  #header > p, #header1 > p {
+    position: relative;
+    color: white;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vw;
+  }
+  
+  #header1 {
+    position: relative;
+    background-color: gray;
+    width: 50%;
+    height: 100px;
+    transform: translate3D(0, 0, 0);
+  }
+  
+  #header2 {
+    position: relative;
+    top: 350%;
+    left: 75%;
+  } */
+  
