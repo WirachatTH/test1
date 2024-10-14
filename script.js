@@ -61,13 +61,13 @@ window.onload = function() {
                 element.classList.remove(`non-${trans}`);
                 element.classList.remove('show');
             }
-            console.log(`${item}, ${elementBottom}, ${viewportTop}`);
+            // console.log(`${item}, ${elementBottom}, ${viewportTop}`);
         });
     }
     
 
     const sections = ['sec1', 'sec2', 'sec3', 'sec4', 'sec5'];
-    const elements = ['intro', 'peem1', 'about_me', 'info', 'peem2', 'taiga1'];
+    const elements = ['intro', 'peem1', 'about_me', 'info', 'peem2', 'taiga1', 'education', 'peem3', 'bcc', 'bcc_text1', 'bcc_text2', 'skills', 'abilities', 'tools', 'codes', 'contacts', 'contacts1', 'contacts2'];
 
     window.addEventListener('scroll', () => {
         isElementVisible(sections);
